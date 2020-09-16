@@ -4,6 +4,7 @@
     <string name="ET_KEY_PREF">et_pageNumber</string>
     <string name="DEFAULT_PREF_VALUE">1</string>
     <string name="poster_string">Poster</string>
+    <string name="imagePosterString">Poster Image</string>
 
     <!--    <string-array name="array_sortby">-->
     <!--        <item>Popular</item>-->

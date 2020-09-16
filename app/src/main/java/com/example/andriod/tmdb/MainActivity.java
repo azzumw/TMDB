@@ -88,6 +88,9 @@ public class MainActivity extends AppCompatActivity implements ListItemClickList
 
     @Override
     public void onListItemClickListener(int index) {
+        Intent intent = new Intent(this,DetailActivity.class);
+        intent.putExtra("Index",index);
+        startActivity(intent);
         Toast.makeText(this, ""+index, Toast.LENGTH_SHORT).show();
     }
 
