@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">TMDB</string>
+    <string name="more">More Options</string>
+    <string name="ET_KEY_PREF">et_pageNumber</string>
+    <string name="DEFAULT_PREF_VALUE">1</string>
+    <string name="poster_string">Poster</string>
+
+    <!--    <string-array name="array_sortby">-->
+    <!--        <item>Popular</item>-->
+    <!--        <item>Highest Rated</item>-->
+    <!--    </string-array>-->
+
+    <!--    <string-array name="array_values">-->
+    <!--        <item>popular</item>-->
+    <!--        <item>top_rated</item>-->
+    <!--    </string-array>-->
+</resources>
