@@ -5,6 +5,10 @@
     <string name="DEFAULT_PREF_VALUE">1</string>
     <string name="poster_string">Poster</string>
     <string name="imagePosterString">Poster Image</string>
+    <string name="movie_title_string">title</string>
+    <string name="movie_summary_string">This is a summary string.</string>
+    <string name="movie_rating_string">User Rating</string>
+    <string name="movie_date_string">2020-07-09</string>
 
     <!--    <string-array name="array_sortby">-->
     <!--        <item>Popular</item>-->

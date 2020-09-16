@@ -134,8 +134,10 @@ class Utils {
                 String title = object.getString("title");
                 String overView = object.getString("overview");
                 String poster_path = object.getString("poster_path");
-
-                movies.add(new Movie(title,overView,poster_path));
+                int movid_id = object.getInt("id");
+                String releaseDate = object.getString("release_date");
+                int vote = object.getInt("vote_average");
+                movies.add(new Movie(title,overView,poster_path,movid_id,releaseDate,vote));
             }
         } catch (JSONException e) {
             e.printStackTrace();

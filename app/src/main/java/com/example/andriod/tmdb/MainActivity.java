@@ -87,11 +87,12 @@ public class MainActivity extends AppCompatActivity implements ListItemClickList
     }
 
     @Override
-    public void onListItemClickListener(int index) {
+    public void onListItemClickListener(int index, Movie movie) {
         Intent intent = new Intent(this,DetailActivity.class);
-        intent.putExtra("Index",index);
+
+        intent.putExtra("movie",movie);
         startActivity(intent);
-        Toast.makeText(this, ""+index, Toast.LENGTH_SHORT).show();
+
     }
 
     private  class MovieAsyncTask extends AsyncTask<String,Void,List<Movie>>{
