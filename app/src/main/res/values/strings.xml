@@ -10,13 +10,14 @@
     <string name="movie_rating_string">User Rating</string>
     <string name="movie_date_string">2020-07-09</string>
 
-    <!--    <string-array name="array_sortby">-->
-    <!--        <item>Popular</item>-->
-    <!--        <item>Highest Rated</item>-->
-    <!--    </string-array>-->
+        <string-array name="array_sortby">
+            <item>Popular</item>
+            <item>Highest Rated</item>
+            <item>Favourites</item>
+        </string-array>
 
-    <!--    <string-array name="array_values">-->
-    <!--        <item>popular</item>-->
-    <!--        <item>top_rated</item>-->
-    <!--    </string-array>-->
+        <string-array name="array_values">
+            <item>popular</item>
+            <item>top_rated</item>
+        </string-array>
 </resources>

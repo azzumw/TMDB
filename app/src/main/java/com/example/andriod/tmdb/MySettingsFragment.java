@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.text.InputType;
 
 import androidx.preference.EditTextPreference;
+import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
 
@@ -14,6 +15,10 @@ public class MySettingsFragment extends PreferenceFragmentCompat implements Pref
         setPreferencesFromResource(R.xml.prefscreen, rootKey);
 
         EditTextPreference editPref = findPreference("et_pageNumber");
+        ListPreference listPreference = findPreference("listPrefSortBy");
+        listPreference.setSummaryProvider(ListPreference.SimpleSummaryProvider.getInstance());
+
+        listPreference.setOnPreferenceChangeListener(this);
 
         if(editPref!=null){
             editPref.setOnBindEditTextListener(

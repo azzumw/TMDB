@@ -28,6 +28,10 @@ class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieViewHolder> {
         moviesList = list;
     }
 
+    public void clear(){
+        moviesList.clear();
+    }
+
 
     @NonNull
     @Override
@@ -71,7 +75,7 @@ class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieViewHolder> {
         public void onClick(View view) {
 
             int clickedPosition = getAdapterPosition();
-            listItemClickListener.onListItemClickListener(clickedPosition,moviesList.get(clickedPosition));
+            listItemClickListener.onListItemClickListener(moviesList.get(clickedPosition));
         }
     }
 }

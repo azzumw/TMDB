@@ -10,12 +10,12 @@
         app:summary= "Top Rated Movies"
         app:title="Highest Rated" />
 
-<!--    <ListPreference-->
-<!--        android:key="listPrefSortBy"-->
-<!--        android:title="Sort By List"-->
-<!--        android:entries="@array/array_sortby"-->
-<!--        android:entryValues="@array/array_values"-->
-<!--        android:selectable="true"/>-->
+    <ListPreference
+        android:key="listPrefSortBy"
+        android:title="Sort By List"
+        android:entries="@array/array_sortby"
+        android:entryValues="@array/array_values"
+        android:selectable="true"/>
 
     <EditTextPreference
 
@@ -24,5 +24,8 @@
         app:useSimpleSummaryProvider="true"
         android:defaultValue="@string/DEFAULT_PREF_VALUE"
         android:summary="1"/>
+
+
+
 
 </PreferenceScreen>

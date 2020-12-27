@@ -3,14 +3,20 @@ package com.example.andriod.tmdb;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import androidx.room.Entity;
+import androidx.room.Ignore;
+import androidx.room.PrimaryKey;
+
 @SuppressWarnings({"ALL", "unused"})
+@Entity
 class Movie implements Parcelable {
 
+    @PrimaryKey
+    private int movie_id;
     private final String movieName;
     private final String overView;
     private final String image;
     private final String releaseDate;
-    private int movie_id;
     private int vote_avg;
 
     public Movie(String title, String mOverView, String imagePath, int id,String releaseDate,int vote_avg) {
@@ -22,6 +28,7 @@ class Movie implements Parcelable {
         this.vote_avg = vote_avg;
     }
 
+    @Ignore
     private Movie(Parcel in){
         movieName = in.readString();
         overView = in.readString();

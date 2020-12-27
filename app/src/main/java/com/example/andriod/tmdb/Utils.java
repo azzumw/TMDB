@@ -28,6 +28,7 @@ class Utils {
 // --Commented out by Inspection STOP (15/09/2020, 15:44)
 //    private static final String sortBy ="popularity.asc";
     private static final String PARAM_PAGE = "page";
+    private static final String API_KEY = "api_key";
     // --Commented out by Inspection (15/09/2020, 15:44):private static final String PAGE_2 = "2";
 
 
@@ -35,8 +36,9 @@ class Utils {
 
     }
 
-    public static String buildUrl(String url,String page){
-        Uri builtUri = Uri.parse(url).buildUpon().appendQueryParameter(PARAM_PAGE,page).build();
+    public static String buildUrl(String url,String endpoint,String page){
+        Uri builtUri = Uri.parse(url).buildUpon().appendPath(endpoint).appendQueryParameter(API_KEY,"51ed01ec1db0ac9a518638cb27934aec").appendQueryParameter(PARAM_PAGE,page).build();
+//        Log.e("Utils",builtUri.toString());
 
         return builtUri.toString();
     }
